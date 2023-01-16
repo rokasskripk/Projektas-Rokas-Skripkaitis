@@ -1,0 +1,306 @@
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+html {
+    font-size:12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin:0;
+}
+
+
+.site-header {
+    background: linear-gradient(
+    to right,
+    #C70303 0%,
+    #360202 36%,
+    #0C0023 36%,
+    #0b1583 100%
+    )
+}
+.site-header{
+    position:fixed;
+    width:100%;
+    display:block;
+    
+}
+
+.container {
+    max-width:1140px;
+    width:100%;
+    margin:0 auto;
+    padding:0 4px;
+}
+
+.flex-container {
+    display:flex;
+}
+
+.site-header .container {
+    justify-content:space-between;
+    align-items:center;
+    
+}
+
+.main-nav li {
+    list-style:none;
+}
+
+
+.main-nav a{
+    color:#fff;
+    font-size:1rem;
+    text-decoration:none;
+    padding:10px 15px;
+    margin:0 2px;
+
+}
+
+.main-nav i {
+    margin:0 8px;
+    color:#C70303;
+}
+
+.main-nav a:hover, .main-nav a:active {
+    background-color: #000000ab;
+    border-radius:35px;
+}
+
+.mobile-nav {
+    display:none;
+}
+
+.logo {
+    padding:18px 0;
+
+}
+
+
+/* banner */
+
+.banner {
+    background: linear-gradient(
+        to right,
+        #C70303 0%,
+        #360202 36%,
+        #0C0023 36%,
+        #0b1583 100%
+        )
+
+}
+
+.banner {
+
+    text-align:right;
+    padding-top:140px;
+    padding-right:80px;
+    padding-bottom:0px;
+    margin-bottom: -5px;
+}
+
+.banner {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+  
+}
+
+h1 {
+    font-size: 3.75rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+button {
+    width:200px;
+    padding:12px 20px;
+    border-radius: 20px;
+    border-style:none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #C70303;
+}
+
+button:active{
+    background-color: #0C0023;
+}
+
+.banner img {
+    padding-left: 80px;
+}
+
+
+//* paslaugos *//
+
+.services {
+    background-color: #0C0023;
+}
+.services {
+   
+    background: linear-gradient(
+    to right,
+    #0C0023 0%,
+    #030204 50%,
+    #0C0023 100%
+    )
+    
+}
+
+.services {
+    font-family: 'Righteous', cursive;
+}
+
+.section-heading {
+    text-align: center;
+    color:#fff;
+
+}   
+
+.section-heading h2 {
+    font-size:2.5rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    margin:0 auto;
+    padding-top:50px;
+}
+
+.section-heading h2:after {
+    content:"";
+    display:block;
+    width:350px;
+    border-top:4px solid #C70303;
+    margin:22px auto;
+}
+
+.section-heading p {
+    max-width:500px;
+    margin:0 auto;
+    line-height: 1.625;
+}
+
+.service {
+    text-align:center;
+    color:#fff;
+    max-width:350px;
+    margin:50px auto 50px;
+    padding-top: 50px;
+    
+}
+
+.service {
+    background: linear-gradient(
+        to right,
+        #C70303 0%,
+        #360202 30%,
+        #360202 35%,
+        #360202 50%,
+        #360202 50%,
+        #360202 65%,
+        #360202 70%,
+        #C70303 100%
+        )
+}
+}
+
+.service h3 {
+    font-size:1.5rem;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+.section-content p {
+    font-size:1rem;
+    line-height:1.5;
+    font-weight: light;
+    margin:10px auto 50px;
+}
+
+//* cont *//
+
+.cont{
+    background-color: #030204;
+}
+.cont {
+   
+    background: linear-gradient(
+    to right,
+    #0C0023 0%,
+    #030204 50%,
+    #0C0023 100%
+    )
+    
+}
+
+
+.cont .service {
+        text-align:center;
+        color:#fff;
+        width: 100%;
+        max-width:1140px;
+        margin:50px auto 50px;
+        padding-top: 50px;
+}
+
+.cont .service {
+    background: linear-gradient(
+        to right,
+        #C70303 0%,
+        #360202 36%,
+        #0C0023 100%,
+        #0b1583 100%
+        )
+}
+
+.cont .service {
+    padding: 30px;
+    margin-top: 0;
+}
+
+.cont button {
+    background-color: #A4A2A9;
+    border-radius: 0px;
+    color:#C70303;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img1_1 img1_2 img1_3"
+      "img2_1 img2_2 img2_3";
+  }
+  
+  .img{
+    border: 1px solid #000;
+    text-align: center;
+  }
+  
+  .img1_1 { grid-area: img1_1; }
+  
+  .img1_2 { grid-area: img1_2; }
+  
+  .img1_3 { grid-area: img1_3; }
+  
+  .img2_1 { grid-area: img2_1; }
+  
+  .img2_2 { grid-area: img2_2; }
+  
+  .img2_3 { grid-area: img2_3; }
+
+

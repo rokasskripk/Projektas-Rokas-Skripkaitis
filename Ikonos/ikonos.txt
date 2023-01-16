@@ -1,0 +1,12 @@
+biblioteka<script src="https://kit.fontawesome.com/fdfe7ba38f.js" crossorigin="anonymous"></script>
+
+namas<i class="fa-solid fa-house"></i>
+vokas<i class="fa-regular fa-envelope"></i>
+facebook<i class="fa-brands fa-facebook"></i>
+instagram<i class="fa-brands fa-instagram"></i>
+music<i class="fa-solid fa-music"></i>
+location<i class="fa-solid fa-location-dot"></i>
+telefonas<i class="fa-solid fa-phone"></i>
+knyga<i class="fa-solid fa-book"></i>
+motociklas<i class="fa-solid fa-motorcycle"></i>
+telefonas<i class="fa-solid fa-phone"></i>

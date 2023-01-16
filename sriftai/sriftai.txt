@@ -1,0 +1,16 @@
+Righteous
+Regular 400
+
+Roboto
+Regular 400
+Medium 500
+Black 900
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+
+
+css
+font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;
