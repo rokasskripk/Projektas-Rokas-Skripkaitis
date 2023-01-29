@@ -13,29 +13,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/fdfe7ba38f.js" crossorigin="anonymous"></script>
+
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mMenu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display ="block";
+            }
+        }
+    </script>
 </head>
 <body>
     <header class="site-header"> <!--raudonas boxas-->
         <div class="container flex-container"> <!--geltonas box-->
             <div class="logo"> <!--logo box-->
-                <a href="/"><img src="images/logo.png" 
+                <a href="http://localhost/Baigiamasis"><img src="images/logo.png" 
                 alt="Cuda logo"></a>   <!--linkas i logo faila-->
             </div>
             <nav class="main-nav"> <!--zalia navigacija-->
                 <ul class="flex-container">
-                    <li><a href="#"><i class="fa-solid fa-house"></i></i>Pradžia</a></li>
+                    <li><a href="http://localhost/Baigiamasis"><i class="fa-solid fa-house"></i></i>Pradžia</a></li>
                     <li><a href="#"><i class="fa-solid fa-address-card"></i>Apie mane</a></li>
                     <li><a href="#"><i class="fa-regular fa-file"></i>Paslaugos</a></li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i>CV</a></li>
-                    <li><a href="#"><i class="fa-regular fa-envelope"></i>Kontaktai</a></li>
+                    <li><a href="cv.html"><i class="fa-solid fa-user"></i>CV</a></li>
+                    <li><a href="kontaktai.html"><i class="fa-regular fa-envelope"></i>Kontaktai</a></li>
                     <li><a href="tel:+37068888888"><i class="fa-solid fa-phone"></i>+37068888888</a></li>
+
+                    
                 </ul>
             </nav>
+            
+            <nav class="mobile-nav"> <!--zalia navigacija-->
+                  <ul id="mMenu" class="flex-container">
+                      <li><a href="http://localhost/Baigiamasis"><i class="fa-solid fa-house"></i></i>Pradžia</a></li>
+                      <li><a href="#"><i class="fa-solid fa-address-card"></i>Apie mane</a></li>
+                      <li><a href="#"><i class="fa-regular fa-file"></i>Paslaugos</a></li>
+                      <li><a href="cv.html"><i class="fa-solid fa-user"></i>CV</a></li>
+                      <li><a href="kontaktai.html"><i class="fa-regular fa-envelope"></i>Kontaktai</a></li>
+                      <li><a href="tel:+37068888888"><i class="fa-solid fa-phone"></i>+37068888888</a></li>
+
+                  </ul>
+                  <a href="javascript:void(0);" class="icon" 
+                  onclick="myFunction()"><i class="fa fa-bars"></i></a>
+              </nav>
         </div>
     </header>
     <div class="banner">  <!--bannerio raudonas boxas-->
         <div class="column1">
-            <img src ="/images/elon-ma.png" alt="mano nuotrauka" width="500px"> 
+            <img src ="images/elon-ma.png" alt="mano nuotrauka" width="500px"> 
         </div>
         <div class="column2">
             <h1> WEB dizaino ir puslapių <br> kūrimo paslaugos.</h1>
@@ -47,15 +75,13 @@
         <div class="container">
             <div class="section-heading">
                 <h2>Apie mane</h2>
-                <p>We are working with both individuals
-                and bussineses all over the world to
-                create awesome websites and applications.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum consequatur enim obcaecati eligendi doloribus amet provident exercitationem voluptatibus nobis.</p>
             </div>
             <div class="section-content flex-container">
                 <div class="service">
                     <img src="images/1img.png" 
                     alt="Branding">
-                    <h3>Branding</h3>
+                    <h3>Produktų kūrimas</h3>
                     <p>Lorem ipsum dolor sit amet 
                     consectetur adipisicing elit.
                     Eligendi, maiores?</p>
@@ -63,7 +89,7 @@
                 <div class="service">
                     <img src="images/2img.png" 
                     alt="Design">
-                    <h3>Design</h3>
+                    <h3>Dizaino kūrimas</h3>
                     <p>Lorem ipsum dolor sit amet 
                     consectetur adipisicing elit.
                     Eligendi, maiores?</p>
@@ -71,7 +97,7 @@
                 <div class="service">
                     <img src="images/3img.png" 
                     alt="Development">
-                    <h3>Development</h3>
+                    <h3>Puslapio administravimas</h3>
                     <p>Lorem ipsum dolor sit amet 
                     consectetur adipisicing elit.
                     Eligendi, maiores?</p>
@@ -92,15 +118,133 @@
                 
             </div>
         </div>
-    </section>
-    <div class="grid-container">
-        <div class="img img1_1"> img1_1</div>
-        <div class="img img1_2"> img1_2</div>
-        <div class="img img1_3"> img1_3</div>
-        <div class="img img2_1"> img2_1</div>
-        <div class="img img2_2"> img2_2</div>
-        <div class="img img2_3"> img2_3</div>
+        <div class="image-grid">
+            <div class="txt">
+                <h1>Mano darbai</h1>
+            </div>
+            <div class="image-grid-row">
+              <div class="image-grid-cell">
+                <img src="images/1.png" alt="image1" width="500" height="310">
+              </div>
+              <div class="image-grid-cell">
+                <img src="images/2.png" alt="image2" width="500" height="310">
+              </div>
+            </div>
+            <div class="image-grid-row">
+              <div class="image-grid-cell">
+                <img src="images/3.png" alt="image3" width="500" height="310">
+              </div>
+              <div class="image-grid-cell">
+                <img src="images/4.png" alt="image4" width="500" height="310">
+              </div>
+            </div>
+            <div class="image-grid-row">
+              <div class="image-grid-cell">
+                <img src="images/5.png" alt="image5" width="500" height="310">
+              </div>
+              <div class="image-grid-cell">
+                <img src="images/6.png" alt="image6" width="500" height="310">
+              </div>
+            </div>
+          </div>
+          
+        
+        <section class="contact-section">
+            <div class="containeris">
+              <div class="left-section">
+                <h1>Susisiekite su manim</h1>
+                <p>Jei turite darbo pasiūlymą, prašome užpildyti kontaktinę formą dešinėje. <br> Arba susisiekite su manim tiesiogiai duotais kontaktais apačioje.</p>
+                <ul class="contact-icons">
+                  <li>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+37069999999">+37069999999</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:rokas.skripk@gmail.com">rokas.skripk@gmail.com</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://www.google.com/maps?q=location">Vietovė</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="right-section">
+                <form>
+                  <label for="name">Vardas:</label>
+                  <input type="text" id="name" name="name">
+          
+                  <label for="surname">Pavardė:</label>
+                  <input type="text" id="surname" name="surname">
+          
+                  <label for="subject">Tema:</label>
+                  <input type="text" id="subject" name="subject">
+          
+                  <label for="message">Žinutė:</label>
+                  <textarea id="message" name="message"></textarea>
+                  <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+</section>  
+
+  <div class="slider">
+    <div class="slide-track">
+        <div class="slide">
+            <img src="images/Visual_Studio_2012_logo_and_wordmark.svg.png" height="50" width="150" alt="Visual Studio logo">
+        </div>
+        <div class="slide">
+            <img src="images/figmalogo.png" height="50" width="150" alt="Figma logo">
+        </div>
+        <div class="slide">
+            <img src="images/htmlcssjvlogo.png" height="50" width="150" alt="HTML logo">
+        </div>
+        <div class="slide">
+            <img src="images/fntawe.png" height="50" width="150" alt="Font Awesome logo">
+        </div>
+        <div class="slide">
+          <img src="images/Visual_Studio_2012_logo_and_wordmark.svg.png" height="50" width="150" alt="Visual Studio logo">
       </div>
+      <div class="slide">
+          <img src="images/figmalogo.png" height="50" width="150" alt="Figma logo">
+      </div>
+      <div class="slide">
+          <img src="images/htmlcssjvlogo.png" height="50" width="150" alt="HTML logo">
+      </div>
+      <div class="slide">
+          <img src="images/fntawe.png" height="50" width="150" alt="Font Awesome logo">
+      </div> 
+    <div class="slide">
+      <img src="images/Visual_Studio_2012_logo_and_wordmark.svg.png" height="50" width="150" alt="Visual Studio logo">
+    </div>
+    <div class="slide">
+        <img src="images/figmalogo.png" height="50" width="150" alt="Figma logo">
+    </div>
+    <div class="slide">
+        <img src="images/htmlcssjvlogo.png" height="50" width="150" alt="HTML logo">
+    </div>
+    <div class="slide">
+        <img src="images/fntawe.png" height="50" width="150" alt="Font Awesome logo">
+    </div>
+    <div class="slide">
+      <img src="images/Visual_Studio_2012_logo_and_wordmark.svg.png" height="50" width="150" alt="Visual Studio logo">
+    </div>
+    <div class="slide">
+        <img src="images/figmalogo.png" height="50" width="150" alt="Figma logo">
+    </div>
+    <div class="slide">
+        <img src="images/htmlcssjvlogo.png" height="50" width="150" alt="HTML logo">
+    </div>
+    <div class="slide">
+        <img src="images/fntawe.png" height="50" width="150" alt="Font Awesome logo">
+    </div>
     
+    </div>
+  </div>
+
+<div class ="bottom">
+    <p>2023 ©COPYRIGHT RoKaSk</p>
+</class>
+          
 </body>
 </html>
